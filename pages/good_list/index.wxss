@@ -1,0 +1,39 @@
+
+.frist_tab{
+  padding: 0 30rpx;
+}
+.goods_item {
+  display: flex;
+  margin-bottom: 10rpx;
+   border-bottom: 1rpx solid #f6f6f6;
+}
+
+.goods_img_wrap {
+  flex: 2;
+
+}
+
+.goods_img_wrap image {
+  width: 100%;
+  height: 100%;
+}
+
+.goods_info_wrap {
+  flex: 3;
+ 
+}
+
+.goods_info_wrap .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+}
+
+.goods_info_wrap .goods_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+  margin: 20rpx 0 0 20rpx;
+}

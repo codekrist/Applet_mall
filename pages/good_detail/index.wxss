@@ -1,0 +1,96 @@
+page{
+  padding-bottom: 90rpx;
+}
+.detail_swiper swiper{
+  height: 70vw;
+  text-align: center;
+}
+.detail_swiper swiper image{
+  width:60%;
+}
+.goods_price{
+padding: 15rpx;
+font-size: 32rpx;
+color: var(--themeColor);
+font-weight: 600;
+}
+.goods_name_row{
+  display: flex;
+  border-top: 2rpx solid #dedede;
+  border-bottom: 2rpx solid #dedede;
+  padding:  5rpx 0;
+}
+.goods_name{
+  flex:5;
+  font-size: 30rpx;
+  padding: 0 10rpx;
+  color: #000;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}
+.goods_collect{
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.icon-ziyuan{
+  color: var(--themeColor);
+}
+.collect_text{
+text-align: center;
+font-size: 24rpx
+}
+
+.goods_indo_title{
+font-size: 32rpx;
+color: var(--themeColor);
+
+padding: 20rpx;
+font-weight: 600;
+}
+
+.btm_tool{
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 90rpx;
+background: #fff;
+display: flex;
+border-top:1rpx solid #f6f6f6;
+}
+.btm_tool .tool_item{
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 24rpx;
+position: relative;
+}
+button{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.btm_tool .btn_cart{
+flex: 2;
+background: #ffa500;
+color: #fff;
+font-weight: 600;
+font-size: 30rpx;
+}
+.btm_tool .btn_buy{
+flex: 2;
+background: #db1a13;
+color: #fff;
+font-weight: 600;
+font-size: 30rpx;
+}

@@ -1,0 +1,64 @@
+<!--搜索框 start-->
+<SearchInput></SearchInput>
+<!--搜索框 end-->
+
+<!--监听自定义事件start-->
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handletabsItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+    <!--监听自定义事件end-->
+
+    <!-- 商品 -->
+    <view class="frist_tab">
+      <navigator class="goods_item" wx:for="{{goodsList}}" wx:key="goods_id" url="/pages/good_detail/index?goods_id={{item.goods_id}}">
+        <!-- 左侧图片 -->
+        <view class="goods_img_wrap">
+          <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'http://t8.baidu.com/it/u=3687535375,2335339983&fm=191&app=48&wm=1,13,90,45,0,7&wmo=10,10&n=0&g=0n&f=JPEG?sec=1853310920&t=4528304c1872904fa53f62af54084cb7'}}"></image>
+        </view>
+        <!-- 右侧商品信息 -->
+        <view class="goods_info_wrap">
+          <view class="goods_name">{{item.goods_name}}</view>
+          <view class="goods_price">￥{{item.goods_price}}</view>
+        </view>
+
+      </navigator>
+    </view>
+  </block>
+  <block wx:if="{{tabs[1].isActive}}">
+    <!--监听自定义事件end-->
+
+    <!-- 商品 -->
+    <view class="frist_tab">
+      <navigator class="goods_item" wx:for="{{goodsList}}" wx:key="goods_id">
+        <!-- 左侧图片 -->
+        <view class="goods_img_wrap">
+          <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'http://t8.baidu.com/it/u=3687535375,2335339983&fm=191&app=48&wm=1,13,90,45,0,7&wmo=10,10&n=0&g=0n&f=JPEG?sec=1853310920&t=4528304c1872904fa53f62af54084cb7'}}"></image>
+        </view>
+        <!-- 右侧商品信息 -->
+        <view class="goods_info_wrap">
+          <view class="goods_name">{{item.goods_name}}</view>
+          <view class="goods_price">{{item.goods_price}}</view>
+        </view>
+
+      </navigator>
+    </view>
+  </block>
+  <block wx:if="{{tabs[2].isActive}}">
+    <!--监听自定义事件end-->
+
+    <!-- 商品 -->
+    <view class="frist_tab">
+      <navigator class="goods_item" wx:for="{{goodsList}}" wx:key="goods_id">
+        <!-- 左侧图片 -->
+        <view class="goods_img_wrap">
+          <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'http://t8.baidu.com/it/u=3687535375,2335339983&fm=191&app=48&wm=1,13,90,45,0,7&wmo=10,10&n=0&g=0n&f=JPEG?sec=1853310920&t=4528304c1872904fa53f62af54084cb7'}}"></image>
+        </view>
+        <!-- 右侧商品信息 -->
+        <view class="goods_info_wrap">
+          <view class="goods_name">{{item.goods_name}}</view>
+          <view class="goods_price">{{item.goods_price}}</view>
+        </view>
+
+      </navigator>
+    </view>
+  </block>
+</Tabs>

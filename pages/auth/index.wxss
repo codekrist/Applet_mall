@@ -1,0 +1,5 @@
+button{
+  font-weight: normal;
+  margin-top: 200rpx;
+  color: #fff;
+}

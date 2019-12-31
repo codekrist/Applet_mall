@@ -1,0 +1,58 @@
+/**轮播图样式**/
+.index_swiper swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+
+.index_swiper swiper image {
+  width: 100%;
+   border-radius: 14rpx;
+}
+
+/**商品分类导航样式**/
+
+.index_cate {
+  display: flex;
+  padding: 20rpx;
+}
+
+.index_cate navigator {
+  flex: 1;
+}
+
+.index_cate navigator image {
+  width: 100%;
+}
+
+/**楼层样式**/
+
+.index_flooor {
+  padding: 0 20rpx;
+}
+
+.index_flooor .floor_group .floor_title image {
+  width: 100%;
+  margin-top: 20rpx;
+}
+.floor_list{
+  overflow: hidden;
+}
+.index_flooor .floor_group .floor_list navigator {
+  float: left;
+  width: 33.33%;
+}
+
+.index_flooor .floor_group .floor_list navigator:nth-last-child(-n + 4) {
+  height: 198rpx;
+  border-left: 6rpx solid #fff;
+}
+
+.index_flooor .floor_group .floor_list navigator:nth-child(2),
+.index_flooor .floor_group .floor_list navigator:nth-child(3) {
+  border-bottom: 10rpx solid #fff;
+}
+
+.index_flooor .floor_group .floor_list navigator image {
+  width: 100%;
+  height: 100%;
+}
